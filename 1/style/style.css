@@ -1,0 +1,61 @@
+@import	url('header.css');
+@import	url('footer.css');
+@import	url('main.css');
+
+/* Почему-то не работает это подключение. Посмотрел в файл all.css -  в нём создаётся псевдоэлемент с картинкой, и он ссылается на папку webfonts. То есть, чтобы логотипы работали, достаточно подключить all.css и правильно разложить по папкам файлы со шрифтами */
+@import url('../fonts/fontawesome/css/all.css')
+@import url('./main/main.css');
+/* я не понимаю, почему никакое такое подключение не работает... */
+@import url('/style/main/main.css')
+
+
+/* Шрифты------------------------------------------------------------------------------------ */
+@font-face {
+	font-family: Helvetica-Medium;
+	src: url('../fonts/helveticaneuecyr-medium.ttf');
+}
+
+@font-face {
+	font-family: Helvetica-Light;
+	src: url('../fonts/helveticaneuecyr-light.ttf');
+}
+
+@font-face {
+	font-family: Helvetica-Thin;
+	src: url('../fonts/helveticaneuecyr-thin.ttf');
+}
+
+
+/* Общие стили-------------------------------------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-family: Arial, sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.btn {
+	background-color: rgb(201, 53, 85);
+}

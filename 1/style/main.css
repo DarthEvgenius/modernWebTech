@@ -1,0 +1,220 @@
+@import	url('main__header.css');
+
+main {
+	flex: 1 1 auto;
+}
+
+.main-header {
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position-y: -54px;
+    padding-bottom: 100px;
+}
+
+.main-header__container {
+	padding-left: 237px;
+	padding-top: 118px;
+}
+
+.main__header_text-red {
+	display: inline-block;
+	border-top: 5px solid rgb(201, 53, 85);
+	padding-top: 8px;
+	letter-spacing: -0.5px;
+    margin-bottom: 33px;
+}
+
+.main__header_text-title {
+	max-width: 220px;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-size: 1;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 39px;
+    margin-bottom: 29px;
+}
+
+.main__header_text-white {
+	letter-spacing: 0.2px;
+	margin-bottom: 57px;
+}
+
+.main__header_button {
+	max-width: 171px;
+    height: 49px;
+    margin-left: -2px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 33px;
+}
+
+.main__header_link {
+	position: relative;
+    top: -3px;
+    left: -4px;
+    letter-spacing: 0.2px;
+}
+
+.main__header__education {
+	display: flex;
+}
+
+.education-item {
+	margin-right: 58px;
+	font-family: Helvetica-Light;
+}
+/* Тут я попробовал подгонять точно в пиксель, но такое впечатление, что все три элемента на разной высоте. Как-то это глупо вылавливать, мне кажется. */
+.education-item:nth-child(2) {
+	margin-right: 54px;
+}
+
+.education-item:nth-child(3) {
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.education-item:nth-child(3) .education-item_title {
+	font-size: 13px;
+}
+
+.education-item_title {
+	font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+/* main-info ---------------------------------------------------------------------- */
+.main-info {
+	background-color: rgb(4, 4, 64);
+}
+
+.main-info__container {
+	padding-left: 264px;
+	padding-top: 71px;
+	display: flex;
+}
+
+.main-info__image {
+    margin-right: 55px;
+    padding-bottom: 104px;
+}
+
+.img {
+	max-width: 318px;
+}
+
+.text-block_title {
+	border-left: 6px solid rgb(201, 53, 85);
+	font-size: 20px;
+    font-weight: 600;    
+    padding-top: 3px;
+    padding-bottom: 18px;
+}
+
+.text-block_paragraph {
+	font-family: Helvetica-Thin;
+	font-size: 19px;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.main-info__text-block_title {
+	/*border-left: 6px solid rgb(201, 53, 85);*/
+    /*font-size: 20px;*/
+    /*font-weight: 600;*/
+    padding-left: 8px;
+    /*padding-top: 3px;*/
+    /*padding-bottom: 18px;*/
+    margin-bottom: 17px;
+    position: relative;
+    top: -6px;
+    letter-spacing: 0.2px;
+}
+
+.main-info__text-block_paragraph {
+	/*font-family: Helvetica-Thin;*/
+    padding-left: 14px;
+    padding-bottom: 30px;
+    /*font-size: 19px;*/
+    /*letter-spacing: 0.5px;*/
+    /*line-height: 1.2;*/
+    max-width: 546px;
+}
+
+/* main-about --------------------------------------------------------- */
+.main-about {
+	background-color: rgb(19, 11, 91);
+}
+
+.main-about__container{
+    padding-left: 234px;
+    padding-top: 46px;
+}
+
+.main-about__button_text {
+	text-transform: uppercase;
+}
+
+.main-about__text-block_title {
+    padding-left: 3px;
+    margin-bottom: 22px;
+}
+
+.main-about__text-block_paragraph-course {
+	padding-left: 4px;
+    margin-bottom: 29px;
+	max-width: 79%;
+	line-height: 1.25;
+}
+
+.main-about__text-block_document {
+	display: inline-block;
+}
+
+.main-about__text-block:nth-child(2) .main-about__text-block_title {
+	padding-left: 4px;
+	padding-top: 8px;
+	padding-bottom: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    position: relative;
+    left: 1px;
+    margin-bottom: 11px;
+}
+
+.main-about__text-block_title-document {
+    padding-left: 4px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    letter-spacing: -0.2px;
+    margin-bottom: 11px;
+}
+
+.main-about__text-block_paragraph-document {
+	padding-left: 4px;
+	letter-spacing: -0.3px;
+	max-width: 61%;
+	padding-bottom: 167px;
+}
+
+.main-about__button {
+	display: inline-block;
+    width: 357px;
+    height: 102px;
+    border-radius: 18px;
+    padding-top: 23px;
+    position: relative;
+    top: -24px;
+    left: -199px;
+}
+
+.main-about__button_text {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+    font-weight: 700;
+}
